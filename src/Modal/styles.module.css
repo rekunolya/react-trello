@@ -1,0 +1,17 @@
+.modal {
+    width: 275px;
+    height: 275px;
+    margin: 10px;
+	border-radius: 5px;
+	background-color: #F4F5F7;
+}
+.modal__title {
+    display: flex;
+    justify-content: space-between;
+    background-color: darkgrey;
+    margin-bottom: 10px;
+}
+.modal__wrapper{
+    display: flex;
+    justify-content: space-between;
+}
