@@ -1,17 +1,26 @@
 .modal {
-    width: 275px;
-    height: 275px;
-    margin: 10px;
+    width: 300px;
+	height: 130px;
+	margin: 20px auto;
+	text-align: center;
+	border: 1px groove #172B4D;
 	border-radius: 5px;
 	background-color: #F4F5F7;
 }
-.modal__title {
-    display: flex;
-    justify-content: space-between;
-    background-color: darkgrey;
-    margin-bottom: 10px;
+.title {
+    margin-bottom: 15px;
+	padding-top: 10px;
+	color: #172B4D;
+	background-color: rgba(9, 30, 66, 0.205);
+	font-size: 20px;
+	font-weight: bold;;
 }
-.modal__wrapper{
+.text {
+    padding: 10px 5px;
+	font-size: 16px
+}
+.footer {
     display: flex;
-    justify-content: space-between;
+	align-items: center;
+	justify-content: space-between;
 }
