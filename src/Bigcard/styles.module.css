@@ -1,34 +1,226 @@
-.newcard {
-    position: relative;
+.wrapper {
+	position: absolute;
+	z-index: 10;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.3);
+	font-family: 'GoogleSans', Arial, Helvetica, sans-serif;
+}
+
+.bigcard {
 	overflow: hidden;
 	max-width: 768px;
-	min-height: 500px;
+	min-height: 450px;
 	margin: 70px auto;
 	padding: 20px;
 	border-radius: 2px;
-	background: #F4F5F7
-}
-.header {
-    display: flex;
-	justify-content: space-between;
-    vertical-align: middle;
-	margin-bottom: 30px;
-    font-size: 18px;
-	font-weight: 600;
+	background: #F4F5F7;
 }
 
-.cardbody {
-    display: flex;
+.bigcardHeader {
+	display: flex;
+	justify-content: space-between;
+
+	margin-bottom: 30px;
 }
-.discription {
-    margin-bottom: 15px;
-    margin-right: 10px;
+
+.bigcardHeaderRight {
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+}
+
+.bigcardHeaderRight .bigcardHeaderName{
+	width: 100%;
+	border: none;
+	background-color: #F4F5F7;
+	box-shadow: none;
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 20px;
+}
+
+.bigcardHeaderStstus {
+	display: inline-flex;
+	align-items: center;
+	justify-content: baseline;
+	color: #5E6C84;
+	font-size: 16px;
+}
+
+.bigcardHeaderStstusSpan {
+	margin: 0 10px 0 5px;
+	cursor: pointer;
+	border-bottom: 1px solid;
+}
+.bigcardHeadeLeft .button {
+	border-radius: 50%;
+}
+
+.bigcardHeaderStstusSpan:hover {
+	color: #172B4D;
+}
+
+.bigcardWrapper {
+	display: flex;
+	justify-content: space-between;
+}
+
+.bigcardInfo {
+	min-width: 500px;
+	margin-right: 30px;
+}
+
+.cardInfoContainer {
+	display: flex;
+	margin-bottom: 30px;
+}
+
+.cardInfoContainerUsers {
+	margin-right: 30px;
+}
+
+.cardInfoContainerUsersTitle,
+.cardInfoContainerTermTitle {
+	margin-bottom: 5px;
+	color: #5E6C84;
+	font-size: 14px;
+	font-weight: 500;
+}
+
+.classUser {
+	padding: 3px;
+}
+
+.classUser:hover {
+	cursor: pointer;
+	background-color: rgba(9, 30, 66, 0.205);
+}
+
+.cardInfoContainerTermWrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.cardInfoContainerTermInput {
+	margin-right: 5px;
+}
+
+.cardInfoContainerTermBtn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 6px 12px;
+	cursor: pointer;
+	border-radius: 3px;
+	background-color: rgba(9, 30, 66, 0.04);
+}
+
+.containerTermBtnData,
+.containerTermBtnStatus {
+	margin-right: 7px;
+}
+
+.cardInfoContainerTermBtn:hover {
+	background-color: rgba(9, 30, 66, 0.205);
+}
+
+.cardInfoDescriptionWrapper,
+.cardInfoActionsWrapper {
+	/* display: flex;
+	align-items: center; */
+
+	margin-bottom: 15px;
+}
+
+.cardInfoDescriptionTitle,
+.cardInfoActionsTitle {
+	margin-right: 10px;
 	font-size: 17px;
 	font-weight: 600;
 }
 
-.cardbodyleft{
-    min-width: 500px;
-	margin-right: 30px;
-    width: 100%;
+.inputDescription {
+	width: 100%;
+	margin: 0;
+
+	cursor: pointer;
+
+	border: none;
+	outline: none;
+	background-color: #EBEBEB;
+}
+
+.textarea-actions {
+	width: 100%;
+	margin: 0;
+	cursor: pointer;
+}
+
+.cardCreate {
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	margin-bottom: 20px;
+	padding: 0;
+}
+
+.cardCreate:last-child {
+	margin-bottom: 0;
+}
+
+.cardCreateTitle {
+	margin-bottom: 5px;
+	color: #5E6C84;
+	font-size: 14px;
+	font-weight: 500;
+}
+
+.cardCreateButton {
+	justify-content: left;
+	margin-bottom: 7px;
+	list-style-type: none;
+	color: #4F5C74;
+}
+.cardCreateButton button {
+	text-align: left;
+}
+
+
+@media (max-width: 800px) {
+	.wrapper {
+		width: 100%;
+		height: 100%;
+	}
+
+	.bigcard {
+		margin: 10px;
+	}
+
+	.bigcardWrapper {
+		flex-direction: column;
+	}
+
+	.cardInfoContainer {
+		flex-direction: column;
+	}
+
+	.cardInfoContainerTermwrapper {
+		justify-content: unset;
+	}
+
+	.bigcardCreate {
+		display: flex;
+	}
+
+	.textarea-description {
+		width: 80vw;
+	}
+
+	.textarea-actions {
+		width: 80vw;
+	}
 }

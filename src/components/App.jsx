@@ -5,22 +5,21 @@ import { Button } from "./common/Button";
 import { Header } from "./Header";
 import { Date } from "./common/Date";
 import { Input } from "./common/Input";
+import "../css/styles.css"
 
 
 export function App() {
   return (
     <div>
-    <span>Hello World</span>
-    <div>
       <Header/>
       <Dashboard/>
       <Modal 
       title = "Перемещение карточки" 
-      text = "Переместить?"/>
-      <Bigcard title = "New card"/>
-      <Date />
-      <Input/>
-    </div>
+      isVisible = {false}> 
+      Переместить? 
+      </Modal>
+      <Bigcard title = "New card" isVisible = {false}/>
+      
     </div>
   );
 }

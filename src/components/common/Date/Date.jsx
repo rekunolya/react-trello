@@ -13,6 +13,7 @@ export class Date extends React.Component {
       return (
           <div>
               <input type = "date" 
+              className = {css.date}
               value = {this.state.value}
               onChange = {this.changeValue}
               />
