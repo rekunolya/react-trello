@@ -5,6 +5,9 @@
     font-weight: 400;
     color: gray;
     cursor: pointer;
+    padding: 20px;
+	font-size: 30px;
+	font-weight: 600;
 }
 
 .wrapper a {

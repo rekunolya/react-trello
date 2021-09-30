@@ -1,0 +1,55 @@
+@import url('./normolize.css');
+@import url('../fonts/icomoon/style.css');
+@import url('../fonts/icomoon/fonts/button/button_icon_style.css');
+@import url('./fonts.css');
+
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+body {
+	max-width: 1200px;
+	margin: 0 auto;
+	white-space: nowrap;
+	color: #172B4D;
+	background: url(/src/img/6.jpg);
+	background-size: cover;
+	font-family: 'GoogleSans', Arial, Helvetica, sans-serif;
+	font-size: 17px;
+	font-weight: 400;
+}
+
+.wrapper {
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 0 10px 50px 10px;
+}
+
+/* slyles header */
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	padding: 20px;
+
+	font-size: 30px;
+	font-weight: 600;
+}
+
+
+@media (max-width: 800px) {
+	.wrapper {
+		margin: 0;
+	}
+
+	.container-cards {
+		flex-direction: column;
+	}
+}
