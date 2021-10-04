@@ -41,8 +41,17 @@ export class Dashboard extends React.Component {
         return (
             <div className = {css.wrapper}>
             <Card title = "todo"
+    
+           footer = {
+                <div className = {css.footer}>
+                    <Button title = "Добавить" onClick = {this.addInput}/>
+                    <Button title = "Отмена" onClick = {this.cancel}/>
+    
+                </div>
+                }
             
-            children = { 
+            > 
+              
                 <div>
                 <ul>
                      {this.state.todos.map((item) => {
@@ -61,19 +70,10 @@ export class Dashboard extends React.Component {
             placeholder = "input task"
             onBlur = {this.changesInList}/>
             </div>
-            }
-           
-           
-    
-           footer = {
-                <div className = {css.footer}>
-                    <Button title = "Добавить" onClick = {this.addInput}/>
-                    <Button title = "Отмена" onClick = {this.cancel}/>
-    
-                </div>
-                }
+            </Card>
             
-            />
+           
+           
             <Card title = "in process"/>
             <Card title = "done"/>
             </div>

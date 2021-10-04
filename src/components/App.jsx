@@ -18,7 +18,7 @@ export function App() {
       isVisible = {false}> 
       Переместить? 
       </Modal>
-      <Bigcard title = "New card" isVisible = {true}/>
+      <Bigcard title = "New card" isVisible = {false}/>
       
     </div>
   );
