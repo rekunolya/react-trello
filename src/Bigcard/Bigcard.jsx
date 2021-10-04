@@ -57,7 +57,7 @@ export class Bigcard extends React.Component {
                                 <div className={css.cardInfoDescriptionBtn}></div>
                             </div>
     
-                            <Input placeholder = {"Введите описание задачи!"} className= {css.inputDescription}/>
+                            <Input placeholder = "Введите описание задачи!" className= {css.inputDescription}/>
                             
                         </div>
                         <div className={css.cardInfoActions}>
@@ -69,7 +69,7 @@ export class Bigcard extends React.Component {
                                 <div className={css.cardInfoActionsBtn}></div>
                             </div>
                             
-                                <Input placeholder = {"Напишите комментарий..."}/>
+                                <Input placeholder = "Напишите комментарий..."/>
                            
                         </div>
                     </div>

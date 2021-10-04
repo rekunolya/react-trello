@@ -5,3 +5,30 @@
 .footer {
     display: flex;
 }
+.task {
+	overflow: hidden;
+	height: 100%;
+	min-height: 30px;
+	margin-bottom: 10px;
+	padding: 0 5px;
+	word-break: break-all;
+	border-radius: 5px;
+	background-color: rgb(233, 233, 233);
+	box-shadow: 0 0 5px rgb(100, 100, 100);
+	overflow-wrap: break-word;
+}
+
+.task:hover {
+	cursor: pointer;
+
+	background-color: rgb(204, 202, 202);
+	box-shadow: 0 0 5px rgb(100, 100, 100);
+}
+
+li {
+    list-style: none;
+}
+
+ul {
+    padding: 0;
+}
