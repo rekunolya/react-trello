@@ -1,9 +1,11 @@
 import css from './styles.module.css'
 
-export function Button ({onClick, title, icon}) {
+export function Button (props) {
     return (
-        <button onClick className = {css.button + " " + icon}>
-            {title}
+        <button 
+        onClick = {props.onClick} 
+        className = {css.button + " " + props.icon}>
+            {props.title}
         </button>
     )
 }

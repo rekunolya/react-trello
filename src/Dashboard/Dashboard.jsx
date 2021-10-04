@@ -21,7 +21,9 @@ export class Dashboard extends React.Component {
       ...prevState.todos, 
       {text: prevState.value, id: prevState.todos.length + 1}
     ],
-    value: ""
+    value: "",
+    isVisible: false,
+
           }))
     
         )
@@ -40,15 +42,28 @@ export class Dashboard extends React.Component {
             <div className = {css.wrapper}>
             <Card title = "todo"
             
-            children= {
+            children = { 
+                <div>
+                <ul>
+                     {this.state.todos.map((item) => {
+                         return <li key={item.id} >
+                             <textarea className={css.task}>
+                                 {item.text}
+                             </textarea>
+                             </li>;
+                         })
+                     }
+                </ul>
             <Input 
-                value = {this.state.value}
-                isVisible = {this.state.isVisible}
-                onChange = {this.changeInput}
-                placeholder = "input task"
-                onBlur = {this.changesInList}/>
+            value = {this.state.value}
+            isVisible = {this.state.isVisible}
+            onChange = {this.changeInput}
+            placeholder = "input task"
+            onBlur = {this.changesInList}/>
+            </div>
             }
-            
+           
+           
     
            footer = {
                 <div className = {css.footer}>
