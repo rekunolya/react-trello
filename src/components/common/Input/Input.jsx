@@ -1,13 +1,14 @@
 import React from 'react'
 import css from './styles.module.css'
 
-export function Input ({value, onChange, placeholder, className}) {
+export function Input (props) {
     return(
         <input
-        value = {value}
-        onChange = {onChange}
-        placeholder = {placeholder}
-        className = {className}/>
+        value = {props.value}
+        onChange = {props.onChange}
+        placeholder = {props.placeholder}
+        className = {props.className}
+        onBlur = {props.onBlur}/>
         )
    
 }
