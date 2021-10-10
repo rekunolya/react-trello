@@ -5,7 +5,9 @@ import { Button } from "./common/Button";
 import { Header } from "./Header";
 import { Date } from "./common/Date";
 import { Input } from "./common/Input";
+import { LoginPage } from "LoginPage/LoginPage";
 import "../css/styles.css"
+
 
 
 export function App() {
@@ -19,6 +21,7 @@ export function App() {
       Переместить? 
       </Modal>
       <Bigcard title = "New card" isVisible = {false}/>
+      <LoginPage />
       
     </div>
   );

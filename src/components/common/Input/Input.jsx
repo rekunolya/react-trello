@@ -11,7 +11,10 @@ export function Input (props) {
         onChange = {props.onChange}
         placeholder = {props.placeholder}
         className = {props.className}
-        onBlur = {props.onBlur}/>
+        onBlur = {props.onBlur}
+        type = {props.type}
+        name = {props.name}/>
+        
         )
    
 }
