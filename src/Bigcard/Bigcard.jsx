@@ -1,6 +1,5 @@
-import { Button } from '../components/common/Button'
+import { Button, Input } from '../components/common'
 import { Date } from '../components/common/Date'
-import { Input } from '../components/common/Input'
 import React from 'react'
 import css from './styles.module.css'
 

@@ -1,7 +1,6 @@
-import { Input } from 'components/common'
+import { Input, Button } from 'components/common'
 import React from 'react'
 import {Card} from '../Card'
-import { Button } from '../components/common/Button'
 import css from './styles.module.css'
 
 export class Dashboard extends React.Component {
@@ -49,7 +48,6 @@ export class Dashboard extends React.Component {
     
                 </div>
                 }
-            
             > 
               
                 <div>
@@ -63,17 +61,14 @@ export class Dashboard extends React.Component {
                          })
                      }
                 </ul>
-            <Input 
+            {this.state.isVisible && <Input 
             value = {this.state.value}
             isVisible = {this.state.isVisible}
             onChange = {this.changeInput}
             placeholder = "input task"
-            onBlur = {this.changesInList}/>
+            onBlur = {this.changesInList}/>}
             </div>
             </Card>
-            
-           
-           
             <Card title = "in process"/>
             <Card title = "done"/>
             </div>

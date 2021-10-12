@@ -2,10 +2,9 @@ import React from 'react'
 import css from './styles.module.css'
 
 export function Input (props) {
-    if (!props.isVisible) {
-        return null
-    }
+  
     return(
+        <div>
         <input
         value = {props.value}
         onChange = {props.onChange}
@@ -14,7 +13,8 @@ export function Input (props) {
         onBlur = {props.onBlur}
         type = {props.type}
         name = {props.name}/>
-        
+        {props.errorMessage && <p className = {css.error}>{props.errorMessage}</p>}
+        </div>
         )
    
 }
