@@ -1,0 +1,13 @@
+.form {
+    width: 300px;
+    
+	overflow: hidden;
+    padding: 20px 10px;
+    display: block;
+    background-color: #F4F5F7;
+    border-radius: 5px;
+}
+
+.login {
+   margin-bottom: 10px;
+}

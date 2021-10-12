@@ -1,4 +1,3 @@
-import { Input } from 'components/common'
 import css from './styles.module.css'
 
 export function Card ({title, children, footer}) {
